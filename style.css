@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Montserrat";
+    font-size: 1.2rem;
+    background-color: hsl(30, 38%, 92%);
+    max-inline-size: 1440px;
+    justify-content: center; 
+}
+
+img{
+    max-inline-size: 100%;
+    display: block;
+}
+
+.wrapper{
+    max-inline-size: 850px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 15px 15px 50px hsl(212, 21%, 14%);
+    @media(width<375px){
+        display: block;
+        max-inline-size: 600px;
+
+    }
+}
+
+
+h1{
+    font-family: 'Fraunces';
+    font-size: 2.3rem;
+    color: hsl(212, 21%, 14%);
+    @media(width<375px){
+        font-size: 1.7rem;
+    }
+}
+
+h3{
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+
+
+.info{
+    font-size: 1.2rem;
+    padding: 30px;
+    color: hsl(228, 12%, 48%);
+    max-inline-size: 500px;
+
+
+}
+
+
+.images{
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    inline-size: 560px;
+    margin-left: 0;
+    margin-right: 0;
+    @media(width<375px){
+        inline-size: 400px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+
+.icon {
+  inline-size: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;      /*to vertically center icon and text */
+  justify-content: center;  /*to center them horizontally if needed */
+  gap: 15px;               /*to space between icon and text */
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  max-inline-size: 500px;
+  block-size: 50px;
+  color: hsl(0, 0%, 100%); /* text color */
+  font-weight: 700;
+}
+
+
+.button:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+.prices{
+    display: flex;
+    gap: 20px;
+}
+
+.new-price{
+    font-family:'Fraunces';
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: hsl(158, 36%, 37%);
+    @media (width<375px){
+        font-size: 1.1rem;
+
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color:hsl(158, 36%, 37%);
+}
+
+a:hover{
+    color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+.attribution{
+    margin-top: 0;
+    text-align: center;
+    font-weight: 600;
+}

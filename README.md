@@ -1,155 +1,92 @@
-# EssenceGlow
+# Frontend Mentor - Product preview card component
 
- ## Table of contents
+![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
-- [Overview](#overview)
-- [Screenshot](#screenshot)
-  - [The challenge](#the-challenge)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+## Welcome! 👋
 
+Thanks for checking out this front-end coding challenge.
 
-## Overview
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-I built a product preview card component, showcasing a perfume product with responsive images, elegant typography, and a stylish "Add to Cart" button. The design is inspired by a challenge from Frontend Mentor.
+**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-This component demonstrates strong use of responsive design, accessible HTML structure, and modern CSS techniques to create a professional and elegant product card.
+## The challenge
 
-### Screenshot
+Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
 
-![](./images/Screenshot_5-7-2025_01549_127.0.0.1.jpeg)
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-### The challenge
-## 1. Styling the button
-Problem:
-I struggled to make the icon and text align nicely inside the button. They weren't centered properly, and spacing was off.
+Your users should be able to:
 
-## Why it happened:
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for interactive elements
 
-I didn't include align-items: center and justify-content: center in the button's CSS.
+Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-I didn't add a gap to control space between the icon and text.
+## Where to find everything
 
-## How we fixed it:
-- Added display: flex, align-items: center, justify-content: center, and gap: 15px to .button.
-This ensures both the icon and text are perfectly centered and evenly spaced.
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-## 2. Responsive images for desktop and mobile
-# Problem:
-- I didn't know how to swap between a mobile image and a desktop image cleanly without using JavaScript.
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-## Why it happened:
+If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
-- I didn't know about the <picture> element and the media attribute inside <source>.
+You will find all the required assets in the `/images` folder. The assets are already optimized.
 
-- I mistakenly wrote media="(maxwidth:500px)" instead of media="(max-width: 500px)".
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## How we fixed it:
-- Used the <picture> tag with correct media query syntax:
-```html
-<picture>
-  <source srcset="./images/image-product-mobile.jpg" media="(max-width: 500px)">
-  <img src="./images/image-product-desktop.jpg" alt="Product Image">
-</picture>
-```
-- This automatically loads the correct image depending on the viewport size.
+## Building your project
 
-## 3.Image overflowing the parent container
-# Problem:
-- My image was overlapping the container and breaking the layout.
+Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
+1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
+2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
+3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
+5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
+6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
-## Why it happened:
+## Deploying your project
 
-- I set max-inline-size incorrectly instead of using inline-size.
+As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-- I wasn't resetting the border-radius properly for mobile view.
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
 
-## How we fixed it:
-- Corrected to use inline-size instead of max-inline-size.
--  Used border-top-left-radius, border-top-right-radius, and          conditionally removed bottom radius for mobile using @media.
+You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
+## Create a custom `README.md`
 
-## My process
+We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-- HTML Structure: Built clean, semantic markup first, making sure to use appropriate tags and accessibility-friendly attributes.
+The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-- CSS Layout & Style: Started with desktop layout using Flexbox, added shadows, colors, and typography with Google Fonts.
+Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
 
-- Responsive Design: Added @media queries to adjust layout and image styling on smaller screens.
+## Submitting your solution
 
-- Image Responsiveness: Integrated the <picture> tag to handle mobile and desktop images seamlessly.
+Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
 
-- Interactivity: Added a small JavaScript snippet to handle the "Add to Cart" alert on click.
+Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
 
-- Debugging & Refining: Iterated on spacing, radius, shadows, and responsiveness to polish the final look.
+## Sharing your solution
 
-### Built with
+There are multiple places you can share your solution:
 
-- Semantic HTML5 markup
+1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
+2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
+3. Share your solution on other social channels like LinkedIn.
+4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-- CSS custom properties and modern CSS techniques
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
-- Flexbox for layout and centering
+The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
-- Media queries (@media) for responsiveness
+## Got feedback for us?
 
-- <picture> element and srcset for responsive images
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-- Vanilla JavaScript for button click alert
+This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
-### What I learned
-
-- How to style buttons properly using Flexbox for icon and text alignment.
-
-- How to use responsive images with <picture>, srcset, and media queries.
-
-- How to write and fine-tune media queries in CSS.
-
-- Correct use of inline-size and when to use max-inline-size.
-
-- How to add icons inside buttons and keep them accessible and responsive.
-
-- To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
-### Useful resources
-
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images) - This detailed article on responsive images by MDN Web Docs.
-- [Example resource 2](https://www.youtube.com/watch?v=QGb-W-c-gIM&list=PL4-IK0AVhVjOJs_UjdQeyEZ_cmEV3uJvx&index=48) - This helped clarify the use of @media queries in CSS by Kevin Powell youtube.
-
-
-## Author
-
-- Frontend Mentor - [jeff20501](https://www.frontendmentor.io/profile/jeff20501)
-- Github - [jeff20501](https://github.com/jeff20501)
-
-
-## Acknowledgments
-
-- Kevin Powell — helped clarify the use of @media queries in CSS. His YouTube channel is an amazing resource for mastering CSS responsiveness.
-
-- MDN Web Docs — for the detailed article on responsive images.
-
+**Have fun building!** 🚀
